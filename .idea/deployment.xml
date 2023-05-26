@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="chenbang2021@172.20.137.122:22 password (7)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="chenbang2021@172.20.137.122:22 password">
         <serverdata>
@@ -44,6 +44,14 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (7)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public/home/chenbang2021/workspace/GNNLR/GNNLR" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
