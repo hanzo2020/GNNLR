@@ -1,5 +1,6 @@
 # GNNLR
-This is the code file for the research paper GNNLR. The file is still being organized, please stay tuned.
+This is the code file for the research paper <Neural-Symbolic Recommendation Model with
+Graph-Enhanced Information>.
 
 ## Example to run the codes
 ```
