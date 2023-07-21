@@ -33,10 +33,10 @@ class GNNLR(NLR):
                             help='Whether or-and or and-or.')
         return NLR.parse_model_args(parser, model_name)
 
-    def __init__(self, or_and, seq_rec, item_num, variable_num=-1, *args, **kwargs):
+    def __init__(self, or_and, seq_rec, item_num, dataset, variable_num=-1, *args, **kwargs):
         self.or_and = or_and
         self.seq_rec = seq_rec
-        self.dataset = '5GiftCard'
+        self.dataset = dataset
         NLR.__init__(self, variable_num=item_num, *args, **kwargs)
 
 

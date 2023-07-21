@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="chenbang2021@172.20.137.122:22 password (7)" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="chenbang2021@127.0.0.1:7878 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="chenbang2021@127.0.0.1:7878 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public/home/chenbang2021/workspace/GNNLR-hzconnect" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@127.0.0.1:7878 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public/home/chenbang2021/workspace/GNNLR-hzconnect" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="chenbang2021@172.20.137.122:22 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (10)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (11)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (12)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (13)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (14)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (15)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -48,6 +104,20 @@
         <serverdata>
           <mappings>
             <mapping deploy="/public/home/chenbang2021/workspace/GNNLR/GNNLR" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (8)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="chenbang2021@172.20.137.122:22 password (9)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -30,7 +30,7 @@ from data_processors.ProLogicRecDP import ProLogicRecDP
 
 # # import runners
 from runners.BaseRunner import BaseRunner
-os.environ['CUDA_LAUNCH_BLOCKING'] = '1' 
+
 
 def build_run_environment(para_dict, dl_name, dp_name, model_name, runner_name):
     if type(para_dict) is str:
@@ -176,6 +176,13 @@ def main():
     torch.manual_seed(args.random_seed)
     torch.cuda.manual_seed(args.random_seed)
     np.random.seed(args.random_seed)
+    random.seed(args.random_seed)
+    torch.cuda.manual_seed_all(args.random_seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(args.random_seed)
+    os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
+    torch.use_deterministic_algorithms(True)
 
     # cuda
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu  # default '0'
