@@ -1,7 +1,7 @@
 # GNNLR
 This is the code file for the research paper Neural-Symbolic Recommendation Model with
-Graph-Enhanced Information.
-environment
+Graph-Enhanced Information.  
+The paper has been accepted by ICONIP2023, you can read the preprint version at this link:https://arxiv.org/abs/2307.05036  
 ## Example to run the codes
 ```
 > cd \src  
