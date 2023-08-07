@@ -147,7 +147,7 @@ class GNNLR(NLR):
         edge_weight = []
         for key in uid_dict:
             for i in range(len(uid_dict[key]) - 1):
-                if (uid_dict[key][i], uid_dict[key][i + 1]) not in edge_list:
+                if (uid_dict[key][i], uid_dict[key][i + 1]) not in edge_dict.keys():
                     edge_list.append((uid_dict[key][i], uid_dict[key][i + 1]))
                     edge_list.append((uid_dict[key][i + 1], uid_dict[key][i]))
                     edge_dict[(uid_dict[key][i], uid_dict[key][i + 1])] = 1
@@ -226,15 +226,10 @@ class GNNLR(NLR):
         #     print('num of edge_index:' + str(self.graph.edge_index.shape[1]))
         #     self.load_graph = 0
         #利用图神经网络与实体特征与邻接矩阵获得聚合特征
-        graph_x = self.feature_embeddings(self.entitys.cuda())
-        self.graph.x = graph_x
+        self.graph.x = self.feature_embeddings(self.entitys.cuda())
         entity_features = self.gcn(self.graph.x, self.graph.edge_index, self.graph.edge_weight)
         #
-        elements = history
-        elements = elements.type(torch.float32).unsqueeze(2).expand(history.shape[0], history.shape[1], self.v_vector_size).clone()
-        for i in range(history.shape[0]):
-            for j in range(history.shape[1]):
-                elements[i][j] = entity_features[history[i][j].abs()]
+        elements = entity_features[np.abs(history.cpu())]
         #
         #elements = self.feature_embeddings(history.abs())  # B * H * V
         # if train:
@@ -296,13 +291,7 @@ class GNNLR(NLR):
         #
         # if train:
         #     print('train')
-        right_vector = feed_dict[IID]
-        right_vector = right_vector.type(torch.float32).unsqueeze(1).expand(right_vector.shape[0],  self.v_vector_size).clone()
-        for i in range(feed_dict[IID].shape[0]):
-            if self.use_uid:
-                right_vector[i] = entity_features[(feed_dict[IID][i] + self.user_num)]
-            else:
-                right_vector[i] = entity_features[(feed_dict[IID][i])]
+        right_vector = entity_features[np.abs(feed_dict[IID].cpu())]
 
         #
         #right_vector = self.feature_embeddings(feed_dict[IID])  # B * V

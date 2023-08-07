@@ -12,7 +12,7 @@ import copy
 import torch_geometric
 from utils import utils
 from utils.global_p import *
-
+import random
 # # import data_loaders
 from data_loaders.DataLoader import DataLoader
 from data_loaders.ProLogicDL import ProLogicDL
